@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Navbar Example</title>
+</head>
+<body>
+<div class="container">
+  <header>
+<nav>
+  <ul>
+    <li><a href="#">JAGOAN BOLA</a></li>
+  </ul>
+</nav>
+</header>
+<h1>JAGOAN BOLA</h1>
+<p>Welcome di JAGOAN BOLA berikut ini beberapa pemain yang yang termasuk jago : </p>
+  <h2>Nominasi Pemain Terbaik</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Gambar</th>
+        <th>Nama Pemain</th>
+        <th>Match</th>
+        <th>Cetak Gool</th>
+        <th>Rangking</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="mesi.jpg" alt="Gambar 1"></td>
+        <td>Lionel Messi</td>
+        <td>1000</td>
+        <td>2500</td>
+        <td>Semesta No.1</td>
+      </tr>
+      <tr>
+       <td><img src="dodo.jpg" alt="Gambar 1"></td>
+        <td>Cristiano Ronaldo</td>
+        <td>800</td>
+        <td>2000</td>
+        <td>Global No.1</td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+          <h1>Pilih Jagoan Anda</h1>
+          
+        <ul class="player-list">
+            <li>
+                <img src="mesi.jpg" alt="Pemain 1">
+                <span class="player-name">Messi</span>
+                <button class="vote-btn" onclick="vote('player1')">Pilih</button>
+            </li>
+
+            <li>
+                <img src="Dodo.jpg" alt="Pemain 2">
+                <span class="player-name">Ronaldo</span>
+                <button class="vote-btn" onclick="vote('player2')">Pilih</button>
+            </li>
+        </ul>
+  <br />
+  
+  <form action="#" method="post" >
+        <label for="nama">Nama Pemain:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="posisi">Nama Panjangnya:</label>
+        <input type="text" id="posisi" name="posisi" required>
+
+        <label for="alasan">Alasan:</label>
+        <textarea id="alasan" name="alasan" required></textarea>
+
+        <button type="submit">Rekomendasikan</button>
+    </form>
+  
+</div>
+</body>
+</html>
